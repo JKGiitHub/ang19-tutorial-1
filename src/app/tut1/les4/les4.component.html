@@ -1,0 +1,10 @@
+<h4>Les4: Deciding what to display: Conditional control Flow in Components - a+if a+else (Angular template syntax) v17+</h4>
+@if (isServerRunning) {
+    <p>Yes, the server is running.</p>
+    @if (isLoggedIn) {
+        <p>User is logged in.</p>
+    }
+}
+@else {
+    <p>No, the server is not running.</p>
+}
