@@ -1,0 +1,15 @@
+<h4>Les10: Deferrable views - how to defer load a section of your component template</h4>
+<a href="https://angular.dev/guide/templates/defer">*deferred loading with a-defer in the in-depth guide.</a>
+<h5>parent component</h5>
+<div>
+    <h4>How I feel about Angular</h4>
+    <article></article>
+
+    @defer (on viewport) {
+    <tut1-les10child />
+    } @placeholder {
+    <p>Future comments</p>
+    } @loading (minimum 3s) {
+    <p>Loading comments...</p>
+    }
+</div>

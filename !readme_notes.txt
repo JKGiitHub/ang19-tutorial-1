@@ -7,3 +7,4 @@
 7. Event handling (& responding to user actions)
 8. @Input: sending data into a component (from parent to child, using attributes of child component)
 9. @Output: event communication with parent component (emitting events or sending data to parent component using events & event subscriptions)
+10. Deferrable views - how to defer load a section of your component template
