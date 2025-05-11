@@ -11,7 +11,7 @@ import { provideImgixLoader, IMAGE_LOADER, ImageLoaderConfig } from '@angular/co
     {
       provide: IMAGE_LOADER,
       useValue: (config: ImageLoaderConfig) => {
-        console.log(config);
+        // console.log(config);
         return `/assets/${config.src}`;
       },
     }
