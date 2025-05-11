@@ -1,3 +1,70 @@
 import { Routes } from '@angular/router';
+import { HomepageComponent } from './tut1/homepage/homepage.component';
+import { Les1Component } from './tut1/les1/les1.component';
+import { Les3Component } from './tut1/les3/les3.component';
+import { Les4Component } from './tut1/les4/les4.component';
+import { Les5Component } from './tut1/les5/les5.component';
+import { Les6Component } from './tut1/les6/les6.component';
+import { Les7Component } from './tut1/les7/les7.component';
+import { Les8parentComponent } from './tut1/les8/les8parent/les8parent.component';
+import { Les9parentComponent } from './tut1/les9/les9parent/les9parent.component';
+import { Les10parentComponent } from './tut1/les10/les10parent/les10parent.component';
+import { Les11Component } from './tut1/les11/les11.component';
 
-export const routes: Routes = [];
+export const routes: Routes = [
+    {
+        path: '',
+        component: HomepageComponent,
+        title: 'Home Page',
+    },
+    {
+        path: 'les1',
+        component: Les1Component,
+        title: 'Lesson 2',
+    },
+    {
+        path: 'les3',
+        component: Les3Component,
+        title: 'Lesson 3',
+    },
+    {
+        path: 'les4',
+        component: Les4Component,
+        title: 'Lesson 4',
+    },
+    {
+        path: 'les5',
+        component: Les5Component,
+        title: 'Lesson 5',
+    },
+    {
+        path: 'les6',
+        component: Les6Component,
+        title: 'Lesson 6',
+    },
+    {
+        path: 'les7',
+        component: Les7Component,
+        title: 'Lesson 7',
+    },
+    {
+        path: 'les8',
+        component: Les8parentComponent,
+        title: 'Lesson 8',
+    },
+    {
+        path: 'les9',
+        component: Les9parentComponent,
+        title: 'Lesson 10',
+    },
+    {
+        path: 'les10',
+        component: Les10parentComponent,
+        title: 'Lesson 10',
+    },
+    {
+        path: 'les11',
+        component: Les11Component,
+        title: 'Lesson 11',
+    },
+];
