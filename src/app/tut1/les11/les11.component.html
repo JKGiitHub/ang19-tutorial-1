@@ -1,0 +1,27 @@
+<h4>Les11: Optimizing images - NgOptimizedImage</h4>
+<a href="https://web.dev/explore/learn-core-web-vitals">* Core Web Vitals Essential metrics for a healthy site.</a>
+<br>
+<a href="https://angular.dev/guide/image-optimization">*image optimization with NgOptimizedImage in the in-depth
+    guide.</a><br>
+<a href="https://web.dev/articles/cls">Cumulative Layout Shift (CLS)</a><br>
+<a href="https://web.dev/articles/optimize-lcp">LCP - Optimize Largest Contentful Paint</a><br>
+<a href="https://angular.dev/guide/image-optimization#configuring-an-image-loader-for-ngoptimizedimage">Configuring an image loader for NgOptimizedImage</a><br>
+
+<p>Username: {{ username }}</p>
+<p>Preferred Framework:</p>
+<ul>
+    <li>
+        Static Image: <br>
+        <img ngSrc="logo.jpg" alt="Angular logo" width="300" height="256" id="img1" priority/>
+    </li>
+    <li>
+        Dynamic Image:<br>
+        <img [ngSrc]="logoUrl" [alt]="logoAlt" width="300" height="256" id="img2"/>
+    </li>
+</ul>
+
+
+<div class="image-container" style="position: relative; height: 256px;" id="img3" >
+    //Container div has 'position: "relative"'
+    <img ngSrc="logo.jpg" fill />
+</div>
