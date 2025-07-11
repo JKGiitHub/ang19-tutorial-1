@@ -1,0 +1,24 @@
+<h4>Lesson 15. Forms - Reactive Forms </h4>
+<p>
+    When you want to manage your forms programmatically instead of relying purely on the template, reactive forms are
+    the answer.
+</p>
+<p>
+    <a href="https://angular.dev/guide/forms/reactive-forms">* reactive forms in the in-depth guide.</a>
+</p>
+
+<form [formGroup]="profileForm" (ngSubmit)="handleSubmit()">
+    <label>
+        Name
+        <input type="text" formControlName="name" />
+    </label>
+    <label>
+        Email
+        <input type="email" formControlName="email" />
+    </label>
+    <button type="submit">Submit</button>
+</form>
+
+<h4>Profile Form</h4>
+<p>Name: {{ profileForm.value.name }}</p>
+<p>Email: {{ profileForm.value.email }}</p>
