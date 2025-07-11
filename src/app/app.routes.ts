@@ -11,6 +11,7 @@ import { Les9parentComponent } from './tut1/les9/les9parent/les9parent.component
 import { Les10parentComponent } from './tut1/les10/les10parent/les10parent.component';
 import { Les11Component } from './tut1/les11/les11.component';
 import { Les14Component } from './tut1/les14/les14.component';
+import { Les15Component } from './tut1/les15/les15.component';
 
 export const routes: Routes = [
     {
@@ -72,5 +73,10 @@ export const routes: Routes = [
         path: 'les14',
         component: Les14Component,
         title: 'Lesson 14',
+    },
+    {
+        path: 'les15',
+        component: Les15Component,
+        title: 'Lesson 15',
     },
 ];
