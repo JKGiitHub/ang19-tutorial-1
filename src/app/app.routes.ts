@@ -10,6 +10,7 @@ import { Les8parentComponent } from './tut1/les8/les8parent/les8parent.component
 import { Les9parentComponent } from './tut1/les9/les9parent/les9parent.component';
 import { Les10parentComponent } from './tut1/les10/les10parent/les10parent.component';
 import { Les11Component } from './tut1/les11/les11.component';
+import { Les14Component } from './tut1/les14/les14.component';
 
 export const routes: Routes = [
     {
@@ -66,5 +67,10 @@ export const routes: Routes = [
         path: 'les11',
         component: Les11Component,
         title: 'Lesson 11',
+    },
+    {
+        path: 'les14',
+        component: Les14Component,
+        title: 'Lesson 14',
     },
 ];

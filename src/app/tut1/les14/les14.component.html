@@ -1,0 +1,23 @@
+<h4>Les14: Forms - template-driven approach & "banana in a box"</h4>
+<p>
+    <a href="https://angular.dev/guide/forms">* forms in Angular in the in-depth guide.</a>
+</p>
+<p>
+    <a href="https://angular.dev/guide/templates/two-way-binding">* syntax [()] is known as "banana in a box". Angular
+        docs about two-way data binding.</a>
+</p>
+<p>
+    <a href="https://angular.dev/guide/forms/reactive-forms#adding-a-basic-form-control">* adding a basic form control
+        in the in-depth guide.</a>
+</p>
+<p>
+    <a href="https://angular.dev/guide/forms/template-driven-forms">* Building a template-driven form</a>
+</p>
+
+<p><b>Username:</b> {{ username }}</p>
+<p><b>{{ username }}'s favorite framework:</b> {{ favoriteFramework }}</p>
+<label for="framework">
+    Favorite Framework:
+    <input id="framework" type="text" [(ngModel)]="favoriteFramework" />
+</label>
+<button (click)="showFramework()">Show Framework</button>
