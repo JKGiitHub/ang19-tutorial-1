@@ -1,0 +1,12 @@
+<h4>Lesson 16. Validating forms</h4>
+<p>
+    <a href="https://angular.dev/guide/forms/reactive-forms#validating-form-input" target="_blank">* validating form
+        input in the
+        in-depth guide</a>
+</p>
+
+<form [formGroup]="profileForm">
+    <input type="text" formControlName="name" name="name" />
+    <input type="email" formControlName="email" name="email" />
+    <button type="submit" [disabled]="!profileForm.valid">Submit</button>
+</form>
