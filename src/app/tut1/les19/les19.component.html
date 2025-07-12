@@ -1,0 +1,27 @@
+<h4>Lesson 19. Pipes with parameters (Formatting data with pipes) </h4>
+<p>
+    <a href="https://angular.dev/guide/templates/pipes#passing-parameters-to-pipes" target="_blank">* formatting data
+        with pipes in the in-depth guide.</a>
+</p>
+
+<p>You can take your use of pipes even further by configuring them. Pipes can be configured by passing options to them.
+</p>
+<p>To pass parameters to a pipe, use the : syntax followed by the parameter value. </p>
+
+<ul>
+    <li>Number with "decimal" {{ num }}</li>
+    <li>Date with "date" {{ birthday }}</li>
+    <li>Currency with "currency" {{ cost }}</li>
+</ul>
+
+<ul>
+    <li>Number with "decimal" {{ num | number:"3.2-2"}}</li>
+    <li>Date with "date" {{ birthday | date:"medium"}}</li>
+    <li>Currency with "currency" {{ cost | currency}}</li>
+</ul>
+
+<!--
+NOTE: What's that format? The parameter for the DecimalPipe is called digitsInfo, 
+this parameter uses the format:
+    {minIntegerDigits}.{minFractionDigits}-{maxFractionDigits} 
+-->
