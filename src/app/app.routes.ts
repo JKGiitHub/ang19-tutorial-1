@@ -16,6 +16,7 @@ import { Les16Component } from './tut1/les16/les16.component';
 import { Les17Component } from './tut1/les17/les17.component';
 import { Les18Component } from './tut1/les18/les18.component';
 import { Les19Component } from './tut1/les19/les19.component';
+import { Les20Component } from './tut1/Les20/les20.component';
 
 export const routes: Routes = [
     {
@@ -102,5 +103,10 @@ export const routes: Routes = [
         path: 'les19',
         component: Les19Component,
         title: 'Lesson 19',
+    },
+    {
+        path: 'les20',
+        component: Les20Component,
+        title: 'Lesson 20',
     },
 ];
